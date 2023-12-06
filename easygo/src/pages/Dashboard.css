@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+ 
+  background:linear-gradient(90deg, rgb(239, 242, 247) 0%, 7.60286%, rgb(237, 240, 249) 15.2057%, 20.7513%, rgb(235, 239, 248) 26.297%, 27.6386%, rgb(235, 239, 248) 28.9803%, 38.2826%, rgb(231, 237, 249) 47.585%, 48.1216%, rgb(230, 236, 250) 48.6583%, 53.1306%, rgb(228, 236, 249) 57.6029%, 61.5385%, rgb(227, 234, 250) 65.4741%, 68.7835%, rgb(222, 234, 250) 72.093%, 75.7603%, rgb(219, 230, 248) 79.4275%, 82.8265%, rgb(216, 229, 248) 86.2254%, 87.8354%, rgb(213, 228, 249) 89.4454%, 91.8605%, rgb(210, 226, 249) 94.2755%, 95.4383%, rgb(209, 225, 248) 96.6011%, 98.3005%, rgb(208, 224,247)100%);
+
+  font-family: "Exo 2", sans-serif;
+  color: #333;
+}
+
+.main-admin-container {
+  display: flex;
+}
+
+.profile-admin-container {
+  border-right: 1px solid lightgray;
+  height: 100vh;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.main-admin-control-container {
+  height: 100vh;
+  padding: 20px;
+  flex: 2;
+  text-align: center;
+}
+
+.side-admin-control-container {
+  height: 100vh;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+/* PROFILE CARD CSS  */
+.card {
+  position: relative;
+  top: 10px;
+  width: 315px; /* Remove for full width */
+  height: 380px; /* Remove for full width */
+  box-shadow: 0 0 100px rgba(133, 127, 127, 0.3);
+  border-radius: 20px;
+ 
+  
+  background-image: radial-gradient(circle, rgb(154, 164, 199) 0%, rgb(55, 56, 115) 100%);
+  
+  
+}
+.card-header {
+  background-image: url("../components/LostAndFound/lfimages/profile.jpeg");
+  
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: top;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-body {
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.profile-name {
+  margin-top: 11px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* margin: 0 auto; */
+  /* color: #f1bdbd; */
+}
+
+/* .profile-department {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: #000000;
+} */
+
+.bio {
+  font-size: 18px;
+  /* color: #f1bdbd; */
+  font-weight: 700;
+  margin: 10px auto;
+  line-height: 20px;
+}
+
+.logout-control {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  padding: 10px;
+}
+
+.logout-control img {
+  height: 30px;
+}
+
+.logout-control h3 {
+  display: inline;
+  padding-left: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.logout-control:hover {
+  cursor: pointer;
+}
+
+.map-redirect-control {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  padding: 0px;
+}
+
+.map-redirect-control img {
+  height: 40px;
+}
+
+.map-redirect-control h3 {
+  display: inline;
+  padding-left: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.map-redirect-control:hover {
+  cursor: pointer;
+}
+
+/* PROFILE CARD CSS END */
+
+/*  MAIN CONTROL CSS START */
+
+.count {
+  
+  background-image: radial-gradient(circle, rgb(154, 164, 199) 0%, rgb(55, 56, 115) 100%);
+ 
+  height: 220px;
+  width: 90%;
+  border-radius: 30px;
+  margin: 10px;
+  font: sans-serif;
+}
+
+.update-count-container {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.update-count-container h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.update-count-container h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.update-count-markers {
+  position: absolute;
+  left: 500px;
+}
+
+/* .update-count-issues {
+  position: relative;
+  left: -120px;
+} */
+
+.marker-count-container {
+  display: flex;
+  padding: 20px;
+  padding-top: 80px;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.marker-count {
+  padding: 10px;
+}
+
+.marker-count h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.marker-count h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Marker container */
+.admin-control-markers-container {
+  height: 320px;
+  width: 90%;
+  position: relative;
+  left: 20px;
+  overflow-y: scroll;
+  margin-top: 25px;
+}
+
+.admin-control-markers-container h2 {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.admin-control-markers-container h3 {
+  position: relative;
+  top: -20px;
+  text-align: right;
+  right: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.admin-control-markers-container h3:hover {
+  cursor: pointer;
+}
+
+.admin-control-markers {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.single-marker {
+  background:linear-gradient(90deg, rgb(239, 242, 247) 0%, 7.60286%, rgb(237, 240, 249) 15.2057%, 20.7513%, rgb(235, 239, 248) 26.297%, 27.6386%, rgb(235, 239, 248) 28.9803%, 38.2826%, rgb(231, 237, 249) 47.585%, 48.1216%, rgb(230, 236, 250) 48.6583%, 53.1306%, rgb(228, 236, 249) 57.6029%, 61.5385%, rgb(227, 234, 250) 65.4741%, 68.7835%, rgb(222, 234, 250) 72.093%, 75.7603%, rgb(219, 230, 248) 79.4275%, 82.8265%, rgb(216, 229, 248) 86.2254%, 87.8354%, rgb(213, 228, 249) 89.4454%, 91.8605%, rgb(210, 226, 249) 94.2755%, 95.4383%, rgb(209, 225, 248) 96.6011%, 98.3005%, rgb(208, 224,247)100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  width: 92%;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  transition: box-shadow 0.4s;
+}
+
+.single-marker h5 {
+  font-size: 17px;
+  font-weight: 700;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
+.single-marker img {
+  height: 25px;
+}
+
+.marker-links {
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.marker-delete-btn,
+.marker-edit-btn:hover {
+  cursor: pointer;
+  
+}
+
+.single-marker:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.dropbtn {
+  background-color: #f9f9f9 ;
+  color: black;
+  /* padding: 16px;  */
+  margin-right: 650px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: radial-gradient(circle, rgb(154, 164, 199) 0%, rgb(55, 56, 115) 100%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(154, 164, 199)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropbtn img {
+ 
+  height: 12px;
+}

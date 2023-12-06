@@ -1,0 +1,141 @@
+import styled from "styled-components";
+import { Link } from 'react-router-dom'
+
+export const Container = styled.div`
+  min-height: 500px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    to right, #c4c5fb, #4182ef
+  );
+`;
+
+export const FormWrap = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 480px){
+    height: 70%;
+  }
+`;
+
+export const FormTop=styled.div`
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 930px){
+    display: flex;
+  }
+`
+
+export const Icon=styled(Link)`
+  margin-left: 10px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+
+  @media screen and (max-width: 930px){
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+`;
+
+
+export const ExitIcon=styled(Link)`
+  margin-left: 750px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+
+  @media screen and (max-width: 930px){
+    margin-left: 200px;
+    margin-top: 16px;
+  }
+`;
+
+
+export const FormContent = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 480px){
+    padding: 10px;
+  }
+`;
+
+export const Form = styled.form`
+    background: #010101;
+    max-width: 700px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    margin: 0 auto;
+    padding: 30px 32px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+
+    @media screen and (max-width: 400px){
+        padding: 32px 32px;
+    }
+`;
+
+export const FormH1=styled.h1`
+  margin-bottom: 40px;
+  color: #fff;
+  form-size: 16px;
+  font-weight: 400;
+  text-align: center;
+`;
+
+export const FormLabel=styled.label`
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #fff;
+`
+
+export const FormInput=styled.input`
+  padding: 10px 10px;
+  margin-bottom: 22px;
+  border: none;
+  broder-radius: 4px;
+`;
+
+export const BtnContain = styled.div`
+ 
+  display: flex;
+  flex-direction: row;
+  margin-left:180px;
+`;
+
+export const FormButton=styled.button`
+   background: #5151e4;
+   padding: 16px 14px;
+   
+   
+   border: none;
+   border-radius: 4px;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+`;
+
+
+export const Text=styled.span`
+  text-align: center;
+  margin-top: 24px;
+  color: #fff;
+  font-size: 14px;
+`;
